@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/ico" href="./images/devchallenges.png">
+
+  <title>interior consultant - devChallenges</title>
+
+</head>
+
+<body>
+  <menu id="menu">
+    <button style="position: absolute; right: 14px;top: 14px;" onclick="hiddenMenu()"><img src="./images/close.svg"
+        alt="Close button" width="38px" height="38px"></button>
+    <nav>
+      <ul class="nav-list" id="menuList">
+        <li class="home">Home</li>
+        <li>Collection</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </menu>
+  <header>
+    <div class="thisInterior">
+      <p>THIS INTERIOR</p>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li class="home">Home</li>
+        <li>Collection</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <button class="btn-navList" onclick="displayMenu()"><img src="./images/menu.svg"
+          alt="menu icon from Icons8.es"></button>
+    </nav>
+  </header>
+  <main>
+    <div class="info">
+      <h2>Modern Interior</h2>
+      <p>A full-Service residential & commercial interior design and staging company offering professional organizing &
+        eco-services.</p>
+      <button>
+        Read more
+        <img src="./images/arrow.png" alt="Arrow from icons8.es" width="24px" height="24px">
+      </button>
+    </div>
+    <div class="model">
+      <img src="./images/photo1.png" alt="Modern Interior model">
+      <div>
+        <div class="creator">
+          <img src="./images/photo2.png" alt="Aliza Webber" width="50px" height="50px">
+          <div class="personalInfo">
+            <h5>Aliza Webber</h5>
+            <p>interior designer</p>
+          </div>
+        </div>
+        <div class="model-info">
+          <p>Designed in 2020 by Aliza Webber</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p class="footer-p">Created by <span class="username">SantiagoEmanuel</span> - <a class="footer-p_link"
+        href="https://devChallenges.io/">devChallenges.io</a></p>
+  </footer>
+  <script>
+    function displayMenu() {
+      const menu = document.getElementById('menu');
+      const menuList = document.getElementById('menuList');
+      menu.style.position = 'absolute';
+      menu.style.display = 'block';
+      menuList.style.display = 'flex';
+    }
+    function hiddenMenu() {
+      const menu = document.getElementById('menu');
+      const menuList = document.getElementById('menuList');
+      menu.style.display = 'none'
+      menuList.style.display = 'none'
+    }
+  </script>
+</body>
+
+</html>
