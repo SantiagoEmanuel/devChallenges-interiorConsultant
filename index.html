@@ -25,7 +25,7 @@
       </ul>
     </nav>
   </menu>
-  <header>
+  <header id="header">
     <div class="thisInterior">
       <p>THIS INTERIOR</p>
     </div>
@@ -40,7 +40,7 @@
           alt="menu icon from Icons8.es"></button>
     </nav>
   </header>
-  <main>
+  <main id="main">
     <div class="info">
       <h2>Modern Interior</h2>
       <p>A full-Service residential & commercial interior design and staging company offering professional organizing &
@@ -66,7 +66,7 @@
       </div>
     </div>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <p class="footer-p">Created by <span class="username">SantiagoEmanuel</span> - <a class="footer-p_link"
         href="https://devChallenges.io/">devChallenges.io</a></p>
   </footer>
@@ -74,6 +74,14 @@
     function displayMenu() {
       const menu = document.getElementById('menu');
       const menuList = document.getElementById('menuList');
+      const header = document.getElementById('header');
+      const main = document.getElementById('main');
+      const footer = document.getElementById('footer');
+
+      header.style.display = 'none';
+      main.style.display = 'none';
+      footer.style.display = 'none';
+
       menu.style.position = 'absolute';
       menu.style.display = 'block';
       menuList.style.display = 'flex';
@@ -81,6 +89,14 @@
     function hiddenMenu() {
       const menu = document.getElementById('menu');
       const menuList = document.getElementById('menuList');
+      const header = document.getElementById('header');
+      const main = document.getElementById('main');
+      const footer = document.getElementById('footer');
+
+      header.style.display = 'flex';
+      main.style.display = 'flex';
+      footer.style.display = 'flex';
+
       menu.style.display = 'none'
       menuList.style.display = 'none'
     }
