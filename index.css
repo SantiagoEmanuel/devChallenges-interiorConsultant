@@ -249,6 +249,10 @@ main {
         Width: 500px;
         Height: 355px;
     }
+
+    menu {
+        display: none;
+    }
 }
 
 @media (max-width: 978px) {
